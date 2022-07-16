@@ -1,0 +1,78 @@
+# #튜플
+#
+# t1 = (5,)
+# print(type(t1))
+# t2 = (1,2,3)
+# l1 = [1,2,3]
+# t3 = tuple(l1)
+# t4 = 1,2,3
+# print(type(t1),type(t1),type(t3),type(t4))
+#
+# #튜플과 리스트의 차이점
+# t1 = (1,2,3,4)
+# #삭제 (x)
+# del t1[1]
+# #수정 (x)
+# t1[1] = 5
+#
+# #튜플끼리의 덧셈, 튜플과 정수의 곱셈, 인덱싱, 슬라이싱, 길이 구하는 연산들은 가능
+# t1 = (1,2,3)
+# t2 = (4,5,6)
+# #튜플끼리의 덧셈
+# print(t1+t2)
+# print(t2*2)
+# print(t1[1])
+# print(t2[1:])
+# print(len(t1))
+#
+#
+# #딕셔너리 생성
+# d1={"key":"value"}
+# a=["hello"]
+# b=["python"]
+# d2=dict(zip(a,b))
+# print(d2,type(d2))
+#
+# #딕셔너리의 key값을 이용해서 value값 뽑아내기
+# print(d1["key"])
+#
+# #딕셔너리의 추가, 삭제, 수정
+# d1 = {"apple":"사과","banana":"바나나"}
+# #추가
+# d1["복숭아"]="peach"
+# #삭제
+# del d1["banana"]
+# #수정
+# d1["apple"]="수박"
+# print(d1)
+
+
+d1= {"A":1,"B":2,"C":3}
+print(1 in d1.values())
+print("A" in d1)
+
+for i in d1.keys():
+    print(i)
+
+
+#집합
+s1=set([1,2,3])
+print(s1)
+s2=set("Hello")
+print(s2)
+
+s1=set([1,2,3,4])
+s2=set([3,4,5])
+s3=set([6,7,8])
+
+#합집합 |
+print(s1 | s2)
+print(s1 | s3)
+
+#교집합 &
+print(s1 & s2)
+print(s2 & s3)
+
+#차집합 -
+print(s1 - s2)
+print(s2 - s3)
